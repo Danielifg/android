@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">AA1 02.17</string>
+    <string-array name="quotes">
+
+        <item>"You became what you attract" \n \n --Unknown</item>
+        <item>"Every thought has a neurochemical inflence in the body" \n \n --Dr. Joe Dispenza </item>
+        <item>"Ultimately ,it is not what you have but what you become" \n \n --Unknown</item>
+        <item>"The direction of emotions,feelings and thoughts is your ultimate matrix\'s satisfaction" \n \n --Unknown</item>
+        <item>"Every human deserves to live the results of its full potential" \n \n --Unknown</item>
+
+    </string-array>
+
+    <string-array name="arrayAnimals">
+        <item>Chimpanzees</item>
+        <item>Bottlenose Dolphins</item>
+        <item>Elephants</item>
+        <item>African Grey Parrots</item>
+        <item>Rats</item>
+        <item>Crows</item>
+        <item>Dogs</item>
+        <item>Pigeons</item>
+    </string-array>
+
+    <string-array name="arrayJokes">
+        <item>Your first Android app walks into a hotel and asks for a room with an upright bed. "Why?" asks the concierge. "I haven\'t implemented my horizontal yet".</item>
+        <item>An Android app walks into a bar. Bartender asks, "Can I get you a drink?" The app looks disappointed and says, "That wasn\'t my intent."</item>
+        <item>A WebView walks into a bar. The bartender says, "Sorry buddy, we only allow natives here." Disappointed, the WebView walks out of the bar.. and then gets ran over by a Mustang.</item>
+        <item>A pregnant fragment walks into a bar. The bartender says, "Whoa! Whoa! We don\'t support nested fragments here!"</item>
+        <item>A fragment walks into a bar, and the bartender asks for an ID. Fragment says, "I don\'t have an ID." So the bartender says, "Okay, I\'ll make a NullPointerException."</item>
+
+    </string-array>
+
+    <string-array name="arrayInspiration">
+    <item>“A sacrifice to be real must cost, must hurt, and must empty ourselves. Give yourself fully to the Source.It will use you to accomplish great things on the condition that you believe much more in it\'s love than in your weakness.” \n \n
+-― Mother Teresa</item>
+        <item>\"My religion consists of a humble admiration of the illimitable superior spirit who reveals himself in the slight details we are able to perceive with our frail and feeble mind.” \n \n -― Albert Einstein </item>
+           <item> \"A quiet conscience makes one strong!” \n \n ― Anne Frank</item>
+        <item>“The moment God is figured out with nice neat lines and definitions, we are no longer dealing with God.” \n \n
+―- Rob Bell</item>
+        <item>“What you are is God\'s gift to you, what you become is your gift to God.” \n \n
+―- Hans Urs von Balthasar </item>
+
+    </string-array>
+
+    <string-array name="arrayMusic">
+        <item>Classic</item>
+        <item>Jazz</item>
+        <item>Bossanova</item>
+        <item>Chillstep</item>
+        <item>Mantra Chants</item>
+        <item>Zen Melodies</item>
+    </string-array>
+
+    <string name="title_activity_jokes">JokesActivity</string>
+
+</resources>
