@@ -24,14 +24,47 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp" />
+        android:layout_marginRight="1dp"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <TextView
+        android:text="@string/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.29000002"
+        android:fontFamily="monospace"
+        android:textSize="12sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:id="@+id/count"
+        android:typeface="monospace"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintRight_toRightOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        android:layout_marginRight="10dp" />
 
     <ImageButton
+
         android:id="@+id/random_button"
         android:layout_width="0dp"
         android:layout_height="82dp"
         app:srcCompat="@drawable/die"
-
+            android:onClick="randomClick"
         android:elevation="24dp"
         style="@android:style/Widget.Holo.Light.ImageButton"
         android:adjustViewBounds="false"
@@ -41,26 +74,27 @@
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="7dp"
+        android:layout_marginEnd="14dp"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/smurfs"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="7dp" />
+        app:layout_constraintLeft_toRightOf="@+id/animals"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="14dp" />
 
     <Button
         android:id="@+id/quotes"
         android:text="Quotes"
+        android:onClick="quotesClick"
 
         android:layout_width="130dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:background="?android:attr/actionModeBackground"
         android:layout_height="100dp"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/science"
+        app:layout_constraintBottom_toTopOf="@+id/inspiration"
         android:layout_marginStart="2dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -70,8 +104,9 @@
         android:textColor="@color/common_google_signin_btn_text_light_focused" />
 
     <Button
-        android:id="@+id/smurfs"
+        android:id="@+id/animals"
         android:text="Smart Animals"
+        android:onClick="animalsClick"
 
         android:layout_width="156dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -91,6 +126,7 @@
     <Button
         android:id="@+id/jokes"
         android:text="Jokes"
+        android:onClick="jokesClick"
 
         android:layout_width="130dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -108,7 +144,8 @@
 
     <Button
         android:text="Inspiration"
-        android:id="@+id/science"
+        android:onClick="inspirationClick"
+        android:id="@+id/inspiration"
         android:layout_width="0dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:background="?android:attr/actionModeBackground"
@@ -124,11 +161,12 @@
         android:textColor="@color/common_google_signin_btn_text_light_focused" />
 
     <Button
+        android:onClick="musicClick"
         android:text="Music"
         android:id="@+id/music"
         android:layout_width="156dp"
-        app:layout_constraintRight_toRightOf="@+id/smurfs"
-        app:layout_constraintTop_toBottomOf="@+id/smurfs"
+        app:layout_constraintRight_toRightOf="@+id/animals"
+        app:layout_constraintTop_toBottomOf="@+id/animals"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:background="?android:attr/actionModeBackground"
         android:layout_height="100dp"
@@ -139,6 +177,7 @@
     <Button
         android:id="@+id/last"
         android:text="Last"
+        android:onClick="lastClick"
 
         android:layout_width="0dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -154,35 +193,6 @@
         android:fontFamily="serif"
         android:textAllCaps="false"
         android:textColor="@color/common_google_signin_btn_text_light_focused" />
-
-    <TextView
-        android:text="Daniel Flores G."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.29000002"
-        android:fontFamily="monospace"
-        android:textSize="12sp"
-        android:textColor="@color/common_google_signin_btn_text_dark_default" />
-
-    <TextView
-        android:text="87"
-        android:layout_width="29dp"
-        android:layout_height="23dp"
-        android:id="@+id/textView8"
-        android:typeface="monospace"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:textSize="18sp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
 
 </android.support.constraint.ConstraintLayout>

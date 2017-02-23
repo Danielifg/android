@@ -10,22 +10,23 @@
 
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="1280dp"
         app:srcCompat="@drawable/imgmain"
         android:id="@+id/imageView3"
-        android:scaleType="center"
-        android:layout_height="200dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:scaleType="centerCrop"
+        android:layout_height="441dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
 
     <ImageButton
-        android:layout_width="86dp"
-        android:layout_height="97dp"
+        android:layout_width="294dp"
+        android:layout_height="271dp"
         app:srcCompat="@drawable/die"
-        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteX="966dp"
         android:id="@+id/imageButton2"
         style="@android:style/Widget.Holo.Light.ImageButton"
         android:scaleType="centerCrop"
-        tools:layout_editor_absoluteY="136dp" />
+        tools:layout_editor_absoluteY="455dp"
+        android:background="@color/common_google_signin_btn_text_dark_default" />
 
 </android.support.constraint.ConstraintLayout>

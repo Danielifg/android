@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_music"
     android:layout_width="match_parent"
@@ -11,14 +12,63 @@
     tools:context="dfguerrero.com.androidassignment1.MusicActivity">
 
     <TextView
-        android:text="Music Activity"
+        android:text="TextView"
+        android:layout_height="100dp"
+
+
+        android:layout_marginTop="72dp"
+        android:id="@+id/musicView"
+        android:layout_below="@+id/Music"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="serif" /><![CDATA[
+
+    "
+        />
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_media_rew"
+        android:id="@+id/prev"
+        android:layout_alignTop="@+id/next"
+        android:layout_toLeftOf="@+id/musicView"
+        android:layout_toStartOf="@+id/musicView" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_media_ff"
+        android:id="@+id/next"
+        android:layout_alignTop="@+id/musicView"
+        android:layout_toRightOf="@+id/musicView"
+        android:layout_toEndOf="@+id/musicView"
+        android:layout_marginTop="63dp" />
+
+    <TextView
+        android:text='"Music" '
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/Music"
+        android:fontFamily="serif"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="154dp"
-        android:layout_marginEnd="154dp"
-        android:layout_marginTop="160dp"
-        android:id="@+id/textView5" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 </RelativeLayout>
