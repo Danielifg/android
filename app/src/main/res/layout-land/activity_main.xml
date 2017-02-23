@@ -54,7 +54,7 @@
         android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="8dp"
         app:layout_constraintLeft_toRightOf="@+id/imageView3"
@@ -63,10 +63,11 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="16dp"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintLeft_creator="1">
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginTop="16dp">
 
         <Button
-            android:text="Quotes"
+            android:text="@string/quotes"
             android:onClick="quotesClick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,7 +77,7 @@
 
         <Button
             android:onClick="animalsClick"
-            android:text="Animals"
+            android:text="@string/animals"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/smurfs"
@@ -85,7 +86,7 @@
 
         <Button
             android:onClick="jokesClick"
-            android:text="Jokes"
+            android:text="@string/joke"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/jokes"
@@ -94,7 +95,7 @@
 
         <Button
             android:onClick="inspirationClick"
-            android:text="Inspiration"
+            android:text="@string/inspiration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/science"
@@ -103,7 +104,7 @@
 
         <Button
             android:onClick="musicClick"
-            android:text="Music"
+            android:text="@string/music"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/music"
@@ -112,7 +113,7 @@
 
         <Button
             android:onClick="lastClick"
-            android:text="Last"
+            android:text="@string/last"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/last"

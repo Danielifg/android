@@ -28,13 +28,13 @@ public class AnimalsActivity extends AppCompatActivity {
         nextBtn = (ImageButton) findViewById(R.id.next);
         prevBtn = (ImageButton) findViewById(R.id.prev);
         Random one = new Random();
-        quotesTxt.setText(quotes[one.nextInt(4) + 1]);
+        quotesTxt.setText(quotes[one.nextInt(5)]);
 
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 next++;
-                if (next == 4) {
+                if (next == 5) {
                     next = 0;
                 }
                 quotesTxt.setText(quotes[next]);

@@ -19,7 +19,7 @@ public class MusicActivity extends AppCompatActivity {
     ImageButton prevQuote;
     String[] quotes;
     int next=0;
-    int prev=6;
+    int prev=4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,13 +31,13 @@ public class MusicActivity extends AppCompatActivity {
         prevQuote =(ImageButton)findViewById(R.id.prev);
 
         Random rand = new Random();
-        quotesTxt.setText(quotes[rand.nextInt(5)+1]);
+        quotesTxt.setText(quotes[rand.nextInt(4)+1]);
 
         nextQuote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 next++;
-                if(next==6){
+                if(next==5){
                     next =0;
                 }
                 quotesTxt.setText(quotes[next]);
@@ -48,7 +48,7 @@ public class MusicActivity extends AppCompatActivity {
             public void onClick(View v) {
                 prev--;
                 if(prev==0){
-                    prev =6;
+                    prev =4;
                 }
                 quotesTxt.setText(quotes[prev]);
             }

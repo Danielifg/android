@@ -31,7 +31,7 @@ public class InspirationActivity extends AppCompatActivity {
         prevQuote = (ImageButton) findViewById(R.id.prevQuote);
 
         Random rand = new Random();
-        quotesTxt.setText(quotes[rand.nextInt(4) + 1]);
+        quotesTxt.setText(quotes[rand.nextInt(5)]);
 
         nextQuote.setOnClickListener(new View.OnClickListener() {
             @Override

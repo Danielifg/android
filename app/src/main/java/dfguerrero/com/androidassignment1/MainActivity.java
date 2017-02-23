@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
     public static final String TAG = "TAG";
-    protected int counter = 0;
+    protected int counter =0;
     TextView counterView;
     TextView name;
 
@@ -21,6 +21,11 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
+       /* if((savedInstanceState != null)&&(savedInstanceState.getString("counter")!=null)){
+            counter = savedInstanceState.getString("counter");
+        }*/
+
         setContentView(R.layout.activity_main);
         counterView = (TextView) findViewById(R.id.count);
         name = (TextView) findViewById(R.id.textView3);

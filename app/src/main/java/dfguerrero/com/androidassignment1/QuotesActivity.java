@@ -43,7 +43,7 @@ public class QuotesActivity extends AppCompatActivity {
         Resources res = getResources();
         quotes = res.getStringArray(R.array.quotes);
         Random rand = new Random();
-        i = quotes[rand.nextInt(4) + 1];
+        i = quotes[rand.nextInt(5) ];
         quotesTxt.setText(i);
 
         nextQuote.setOnClickListener(new View.OnClickListener() {

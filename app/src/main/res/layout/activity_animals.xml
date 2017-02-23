@@ -36,7 +36,7 @@
         android:layout_marginLeft="96dp" />
 
     <TextView
-        android:text="animals"
+
         android:layout_width="0dp"
         android:layout_height="107dp"
         android:id="@+id/smartAnimals"
@@ -56,7 +56,7 @@
         android:textAlignment="center" />
 
     <TextView
-        android:text='"Top smartest Animals"'
+        android:text="@string/animals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView7"

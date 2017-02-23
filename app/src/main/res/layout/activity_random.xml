@@ -12,7 +12,7 @@
     tools:context="dfguerrero.com.androidassignment1.RandomActivity">
 
     <TextView
-        android:text="TextView"
+
         android:layout_width="0dp"
         android:layout_height="228dp"
         android:id="@+id/random"

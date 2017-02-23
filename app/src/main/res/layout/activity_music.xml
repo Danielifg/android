@@ -12,7 +12,7 @@
     tools:context="dfguerrero.com.androidassignment1.MusicActivity">
 
     <TextView
-        android:text="TextView"
+
         android:layout_height="100dp"
 
 
@@ -23,22 +23,7 @@
         android:layout_width="150dp"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
-        android:fontFamily="serif" /><![CDATA[
-
-    "
-        />
-
-
-
-
-
-
-
-
-
-
-
-    ]]>
+        android:fontFamily="serif" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -60,7 +45,7 @@
         android:layout_marginTop="63dp" />
 
     <TextView
-        android:text='"Music" '
+        android:text="@string/music"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="38dp"

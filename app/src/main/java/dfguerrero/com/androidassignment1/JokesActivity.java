@@ -33,7 +33,7 @@ public class JokesActivity extends AppCompatActivity {
         quotesText = (TextView) findViewById(R.id.jokes);
 
         Random one = new Random();
-        quotesText.setText(quotes[one.nextInt(4)+1]);
+        quotesText.setText(quotes[one.nextInt(5)]);
 
         SharedPreferences prefs = getSharedPreferences("Last", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
